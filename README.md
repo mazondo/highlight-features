@@ -23,6 +23,9 @@ Features will typically be hidden from inside the interface or by pressing `esc`
 $(".content-container").highlightFeatures("hide");
 ```
 
+## Notes and Excuses
+This is a pretty quick and dirty first implementation, let me know if you're interested in it and I'll clean it up and add more features!  It serves my current needs pretty well.
+
 ## Contributing
 Would love any and all help you feel like giving, just please:
 
