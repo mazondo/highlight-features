@@ -1,8 +1,7 @@
 (function($) {
 	var overlayTemplate = "<div class='feature-highlight'><div class='feature-overlay'><div class='feature-close'>close</div></div></div>",
 		dotTemplate = "<div class='feature-dot-holder'><div class='feature-dot'></div><div class='feature-dot-rays'></div><div class='feature-text'></div></div>",
-		overlay,
-		dots = [];
+		overlay;
 
 	function kill() {
 		overlay.remove();
