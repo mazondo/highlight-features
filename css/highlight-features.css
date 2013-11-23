@@ -110,7 +110,7 @@ box-sizing: border-box;
 	-moz-box-shadow: 0 0 5px #303030;
 }
 
-.feature-dot-holder:hover .feature-text, .feature-dot-holder .feature-text.feature-visible {
+.feature-dot-holder:hover .feature-text {
 	display:block;
 }
 

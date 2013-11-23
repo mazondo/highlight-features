@@ -47,10 +47,6 @@
 				positon: "absolute"
 			});
 
-			dot.on("click", function() {
-				text.toggleClass("feature-visible");
-			});
-
 			//place the dot
 			overlay.append(dot);
 		});
