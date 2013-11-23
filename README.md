@@ -27,10 +27,4 @@ $(".content-container").highlightFeatures("hide");
 This is a pretty quick and dirty first implementation, let me know if you're interested in it and I'll clean it up and add more features!  It serves my current needs pretty well.
 
 ## Contributing
-Would love any and all help you feel like giving, just please:
-
- - Fork the repo
- - Make sure the tests pass (open the SpecRunner.html file)
- - Write tests for the functionality you want (They should fail)
- - Make them pass
- - Push to your fork and submit a pull request
+Would love any and all help you feel like giving!
