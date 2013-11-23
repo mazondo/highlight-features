@@ -1,5 +1,5 @@
-# Formalize Data
-A javascript library to convert form data into a js object which can be converted to json using your favorite json library
+# Highlight Features
+Add contextual help and highlight features on any page with a single line of JS (and jQuery)
 
 ## Defining Features
 Defining features is easy, just include it in your html
