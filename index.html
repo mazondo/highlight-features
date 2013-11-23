@@ -1,0 +1,77 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+  "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <title>Feature Highlight</title>
+
+    <!-- include source files here... -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/feature-highlight.js"></script>
+    <script src="js/application.js"></script>
+    <link rel="stylesheet" href="js/feature-highlight.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/application.css">
+
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-5 header">
+          <h1>Feature Highlighter</h1>
+          <p>An easy to use jQuery plugin for highlighting features and providing contextual help</p>
+          <a class="demo btn btn-large btn-default btn-primary" data-feature="Feature highlighter is a great way to call attention to various features on your page">Demo</a>
+          <a class="download btn btn-large btn-default">Github</a>
+        </div>
+        <div class="col-sm-6 col-sm-offset-1 content">
+          <div class="row">
+            <div class="col-sm-12">
+              <h2>Features</h2>
+              <ul>
+                <li>Add contextual help to your page with a <span data-feature="kind of a single line, I mean you do have to add the data-feature elements">single line</span> of JS</li>
+                <li>Launch the script for the entire page or a single container</li>
+                <li>Easy and intuitive for users, just mouse over the <span data-feature="Exactly like that, good work!">blinking dots</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <h2>How to use</h2>
+              <p>
+              Using the library is easy, just add a <span class='label label-default'>data-feature</span> attribute to <strong>any</strong> html element on your page and run <span class='label label-default' data-feature="You can use 'show', 'toggle', or 'hide' for the trigger">$("body").highlightFeatures("show");</span>
+              <h4>Basic Example</h4>
+              <pre>
+    &#60;a href="https://github.com/mazondo" data-feature="Your feature text goes here"&#62;Link text&#60;/a&#62;
+              </pre>
+              <h4>Works on any element</h4>
+              <pre>
+    &#60;span data-feature="Works with spans as well"&#62;Span text&#60;/span&#62;
+
+    &#60;div data-feature="And divs"&#62;div content&#60;/div&#62;
+              </pre>
+              <h4>Then <span data-feature="You can do this any way you like, I actually think it would be nice to run this on page load if you've added new features recently">run</span> it</h4>
+              <pre>
+    &#60;script&#62;
+      $(".help-link").click(function(e) {
+        e.preventDefault();
+        $("body").highlightFeatures("show");
+      });
+    &#60;/script&#62;
+              </pre>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <h2>Why does the page keep going?</h2>
+              <p>
+                Cause the features keep <span data-feature="see, I told you, wasn't that worth the scroll?">going with the page</span>, and I just wanted to show you that...sheesh.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </body>
+</html>
