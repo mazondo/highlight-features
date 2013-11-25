@@ -110,7 +110,7 @@ box-sizing: border-box;
 	-moz-box-shadow: 0 0 5px #303030;
 }
 
-.feature-dot-holder:hover .feature-text {
+.feature-dot-holder.highlighted-feature .feature-text {
 	display:block;
 }
 
@@ -124,4 +124,12 @@ box-sizing: border-box;
 	border-color: #f1f1f1 transparent;
 	display: block;
 	width: 0;
+}
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
+	.feature-dot-holder .feature-text {
+		position:absolute;
+	}
 }

@@ -1,10 +1,12 @@
 (function($) {
 	var overlayTemplate = "<div class='feature-highlight'><div class='feature-overlay'><div class='feature-close'>close</div></div></div>",
 		dotTemplate = "<div class='feature-dot-holder'><div class='feature-dot'></div><div class='feature-dot-rays'></div><div class='feature-text'></div></div>",
-		overlay;
+		overlay,
+		dots = [];
 
 	function kill() {
 		overlay.remove();
+		dots = [];
 		overlay = false;
 	}
 
@@ -47,9 +49,19 @@
 				positon: "absolute"
 			});
 
+			dot.on("click", function(e) {
+				$(".highlighted-feature").removeClass("highlighted-feature");
+				dot.toggleClass("highlighted-feature");
+			});
+
 			//place the dot
 			overlay.append(dot);
+
+			//add it to the array of dots
+			dots.push(dot);
 		});
+
+		dots[0].addClass("highlighted-feature");
 	}
 
 	$.fn.highlightFeatures = function(trigger) {
